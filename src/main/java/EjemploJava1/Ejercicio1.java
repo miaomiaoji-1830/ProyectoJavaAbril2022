@@ -11,21 +11,20 @@ public class Ejercicio1 {
 		long dias = ChronoUnit.DAYS.between(Exuni, Actual);
 		
 		System.out.println("====DIAS DE FINALIZACION DE LA EXPOSICION UNIVERSAL DE PARIS HASTA HOY====");
-		System.out.println("Los dias usado: " + dias + " dias");
-		
-		
+		System.out.println("Han usado " + dias + " dias");
+	
 		LocalDateTime PGuerra = LocalDateTime.of(1914, 7, 28, 14, 00);
 		LocalDateTime actual = LocalDateTime.now();
 		long minuto = ChronoUnit.MINUTES.between(PGuerra, actual);
 
 		System.out.println("\n====MINUTOS DE PRIMERA GUERRA MUNDIAL HASTA HOY====");
-		System.out.println("Los minutos usado: " + minuto + " minutos");
+		System.out.println("Han usado " + minuto + " minutos");
 		long transcurrimin = ChronoUnit.MINUTES.between(Exuni, PGuerra);
 		long transcurrihor = ChronoUnit.HOURS.between(Exuni, PGuerra);
 		
 		System.out.println("\n====MINUTOS Y HORAS ENTRE DOS EVENTO====");
-		System.out.println("Los minutos usado: " + transcurrimin + " minutos");
-		System.out.println("Los horas usado: " + transcurrihor + " horas");
+		System.out.println("Han usado " + transcurrimin + " minutos");
+		System.out.println("Han usado " + transcurrihor + " horas");
     }
     
 }
